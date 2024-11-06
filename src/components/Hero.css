@@ -31,8 +31,12 @@
 }
 .Hero_btn{
     background-color: #db0a0a;
-    padding: 0.5rem 1.3rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 5px;
     font-size: 1.3rem;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.436);
 }
+.Hero_btn:hover{
+    background-color: #750909;
+}
+

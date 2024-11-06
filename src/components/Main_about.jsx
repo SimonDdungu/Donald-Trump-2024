@@ -1,9 +1,16 @@
 import './Main_about.css'
 import Donald_fam from '../images/wallpaperflare.com_wallpaper.jpg'
+import { motion } from 'framer-motion'
 
 const Main_about = () => {
     return <section className="Main_about_section">
-        <div className="Main_aboutcontainer container">
+        <motion.div 
+
+        initial={{opacity: 0, y: 80}}
+        whileInView={{opacity: 1, y:0, transition: {duration: 1.2, ease: "easeInOut"}}}
+        viewport={{once: true, amount: 0.1}}
+
+        className="Main_aboutcontainer container">
             <div className="Main_about_pic">
                 <img src={Donald_fam} alt="Donald Trump with Wife and Daughter" />
             </div>
@@ -17,7 +24,7 @@ const Main_about = () => {
                         </p>
                         <a href="#">Read More...</a>
             </div>
-        </div>
+        </motion.div>
     </section>
 }
 export default Main_about;

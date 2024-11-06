@@ -1,3 +1,6 @@
+.Main_about_section{
+    margin-bottom: 100px;
+}
 .Main_aboutcontainer{
     display: flex;
     justify-content: center;
@@ -8,6 +11,7 @@
 
 .Main_about_pic{
     width: 80%;
+    cursor: pointer;
 }
 .Main_about_pic img{
     width: 100%;

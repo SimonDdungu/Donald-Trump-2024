@@ -1,6 +1,7 @@
 html, body{
   font-family: Helvetica;
   overflow-x: hidden;
+  overscroll-behavior: none;
 }
 
 
