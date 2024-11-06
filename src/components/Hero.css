@@ -1,0 +1,38 @@
+.Hero_section{
+    background-image: url("../images/cover/donald-trump-shooting-american-flag-picture-hd-wallpaper-uhdpaper.com-436@0@k.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+.Hero_page{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+.Hero_Content{
+    color: white;
+    position: absolute;
+    width: 550px;
+    bottom: 150px;
+    left: 50px;
+}
+.Hero_Content > p{
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+.Hero_btn{
+    background-color: #db0a0a;
+    padding: 0.5rem 1.3rem;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.436);
+}

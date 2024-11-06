@@ -1,0 +1,57 @@
+.Navigation_Bar{
+    background-color: #000d62;
+    z-index: 999;
+}
+.Nav_Bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+.Logo{
+    width: 200px;
+    margin: 0;
+    padding: 0;
+}
+.Logo img{
+    width: 100%;
+}
+
+.Nav_items{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+.Nav_links{
+    padding: 23px 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.Nav_links:hover{
+    background-color: #084490;
+}
+.Nav_links.active{
+    position: relative;
+    width: max-content;
+}
+.Nav_links.active::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #eeef;
+    width: 100%;
+    height: 5px;
+}
+
+
+.Nav_btn{
+    background-color: #db0a0a;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+}

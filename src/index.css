@@ -1,0 +1,25 @@
+html, body{
+  font-family: Helvetica;
+  overflow-x: hidden;
+}
+
+
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+.blue_text{
+  color: #000d62;
+}
+.red_text{
+  color: #db0a0a;
+}
+.anton-sc-regular {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

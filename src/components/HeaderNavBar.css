@@ -1,0 +1,14 @@
+.Header_links{
+    background-color: #efefef;
+}
+.Header_nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 50px;
+    color: black;
+}
+.Header_nav i{
+    margin-right: 1rem;
+    cursor: pointer;
+}
