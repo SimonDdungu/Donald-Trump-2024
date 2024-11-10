@@ -1,6 +1,7 @@
-import './Hero.css'
+import './HeroSection.css'
 
 const Hero = () => {
+
     return <section className="Hero_section">
                 <div className="Hero_page">
                     <div className="overlay"></div>
