@@ -21,6 +21,7 @@
     width: 400px;
     height: 300px;
     cursor: pointer;
+    transition: all 0.4s ease;
 }
 
 .Each_achievement_card img{
@@ -34,4 +35,48 @@
 .Each_achievement_card i{
     font-size: 30px;
     margin-bottom: 25px;
+}
+
+.Each_achievement_card:hover{
+    background-color: #db0a0a95;
+}
+
+@media (max-width: 1030px){
+    .Achievments_section{
+        padding: 0;
+    }
+    .Each_achievement_card > h4{
+        font-size: 1.4rem;
+        text-align: center;
+        margin-bottom: 0;
+        
+    }
+}
+
+@media (max-width: 450px){
+    .achievments_card_container{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    .Each_achievement_card{
+        width: 190px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 400px){
+    .Each_achievement_card{
+        width: 170px;
+        height: 200px;
+    }
+    .Each_achievement_card > h4{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 365px){
+    .achievments_card_container{
+        padding: 0;
+    }
 }

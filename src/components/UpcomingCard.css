@@ -1,0 +1,88 @@
+.UpcomingCamp_Card_container .Each_card{
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.159);
+    cursor: pointer;
+}
+
+.Each_card .Upcoming_Date{
+    width: 60px;
+    color: white;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.Each_card .Upcoming_Date .Date{
+    background-color: #000d62;
+    padding: 10px 5px;
+    margin: 0;
+    font-size: 1.6rem;
+}
+.Each_card .Upcoming_Date .Month{
+    font-size: 1rem;
+    background-color: #db0a0a;
+    padding: 10px 5px;
+    margin: 0;
+}
+
+.Upcoming_Content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12px;
+    overflow: hidden;
+}
+
+.Upcoming_Image{
+    width: 320px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.Upcoming_Image img{
+    width: 100%;
+}
+
+
+@media (max-width: 1030px){
+    .Each_card{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 850px){
+    .UpcomingCamp_Card_container .Each_card{
+        width: 320px;
+    }
+    .Upcoming_Image{
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 500px){
+    .UpcomingCamp_Card_container .Each_card{
+        width: 350px;
+    }
+    .Upcoming_Image{
+        width: 320px;
+    }
+    .Each_card{
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 365px){
+    .UpcomingCamp_Card_container .Each_card{
+        width: 330px;
+    }
+    .Upcoming_Image{
+        width: 310px;
+    }
+}

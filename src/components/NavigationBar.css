@@ -59,3 +59,132 @@
 .Nav_btn:hover{
     background-color: #750909;
 }
+
+.Hamburger_menu{
+    display: none;
+    width: 20px;
+    height: 25px;
+    margin-left: auto;
+    position: relative;
+}
+
+/*----------Hamburger default button-------*/
+.Hamburger_menu span{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+}
+.Hamburger_menu span:nth-child(1){
+    top: 25%;
+}
+.Hamburger_menu span:nth-child(3){
+    top: 75%;
+}
+
+
+/*------Hamburger close button-----*/
+.Hamburger_menu.active span:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.Hamburger_menu.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.Hamburger_menu.active span:nth-child(2){
+    opacity: 0;
+}
+
+.Mobile_Nav_items{
+    width: 100%;
+    height: 0%;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    list-style: none;
+    text-align: center;
+    background-color: #000d62f3;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+}
+.Mobile_Nav_items :is(.Nav_links, .Nav_links_Joinus){
+    display: none;
+    transition: all 0.2s ease-in-out;
+}
+
+/*-----md-----------*/
+@media (max-width: 830px){
+    .Nav_items, .Nav_btn{
+        display: none;
+    }
+    .Hamburger_menu{
+        display: block;
+    }
+    .Mobile_Nav_items.active{
+        height: 100%;
+        padding: 50px 0;
+    }
+    .Mobile_Nav_items.active :is(.Nav_links, .Nav_links_Joinus){
+        display: block;
+    }
+    .Nav_links.active{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
+    }
+    .Nav_links.active::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #eeef;
+        width: 100%;
+        height: 5px;
+    }
+    .Nav_links_Joinus{
+        background-color: #db0a0a;
+        width: 120px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        align-self: center;
+        padding: 5px 10px;
+    }
+    .Nav_links_Joinus a{
+        font-size: 18px;
+        color: white;
+        
+    }
+    .Nav_Bar{
+        padding: 0 30px;
+    }
+}
+
+/*
+@media (min-width: 300px) and (max-height: 850px){
+    .Mobile_Nav_items{
+        height: 100%;
+        padding: 0;
+    }
+    .Nav_links:first-child{
+        margin-top: 60px;
+    }
+    .Nav_links{
+        margin-bottom: 20px;
+    }
+
+}

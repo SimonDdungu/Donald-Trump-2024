@@ -1,5 +1,6 @@
 .Main_about_section{
     margin-bottom: 100px;
+    margin-top: 50px;
 }
 .Main_aboutcontainer{
     display: flex;
@@ -38,4 +39,63 @@
 
 .Main_about_TextContent a{
     color: blue;
+}
+
+.AboutRead{
+    display: none;
+    color: blue;
+}
+
+@media (max-width: 1030px){
+    .Main_about_TextContent > h1{
+        font-size: 2.1rem;
+    }
+}
+/*IPAD AIR, MINI*/
+@media (max-width: 830px){
+    .Main_aboutcontainer{
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .Main_about_TextContent{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .Main_about_TextContent > h1{
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    .Main_about_pic{
+        width: 100%;
+    }
+}
+
+/*IPHONE 14 PRO MAX-16 PRO MAX*/
+@media (max-width: 450px){
+    .Main_about_section{
+        margin-bottom: 50px;
+    }
+    
+    .Main_aboutcontainer{
+        padding: 40px 15px;
+        padding-top: 10px;
+    }
+    .Main_about_hidetext{
+        display: none;
+    }
+    .Main_about_hidetext.active{
+        display: block;
+    }
+    .AboutRead{
+        display: block;
+    }
+}
+
+/*IPHONE X,11 PRO, 12 PRO, S24 ULTRA, S20*/
+@media (max-width: 400px){
+    .Main_about_TextContent > h1{
+        font-size: 2.2rem;
+    }
+    
 }

@@ -1,0 +1,10 @@
+.Footer_Section{
+    background-color: #000d62;
+    color: white;
+    text-align: center;
+    padding-block: 30px;
+    cursor: pointer;
+}
+.Footer_container > p{
+    margin: 0;
+}
