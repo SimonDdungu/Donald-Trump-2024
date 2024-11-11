@@ -1,0 +1,76 @@
+.News_section{
+    margin-bottom: 100px;
+    padding: 50px 25px;
+    background-color: aliceblue;
+}
+.News_Card_Container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.News_container > h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.More_News{
+    margin-top: 70px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+.More_News.hide{
+    height: 0;
+    margin: 0;
+    padding: 0;
+    transform: translateY(50px);
+    overflow: hidden;
+}
+
+.More_News.active{
+    height: auto;
+    transform: translateY(0);
+}
+
+.News_View{
+    width: 130px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    background-color: #000d62;
+    color: white;
+    border-radius: 50px;
+    box-shadow:  0 5px 8px rgba(0, 0, 0, 0.1);;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+/*-------IPAD PRO AND 11------*/
+@media (max-width: 1030px){
+    .News_Card_Container, .More_News{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+/*-------IPHONE 16PRO MAX - 11 PRO MAX*/
+@media (max-width: 450px){
+    .News_Card_Container, .More_News{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .News_section{
+        padding-top: 0;
+    }
+
+    .More_News{
+        margin-top: 0;
+    }
+
+    .News_View{
+        margin-top: 0;
+    }
+}

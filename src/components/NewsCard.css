@@ -1,0 +1,67 @@
+.News_Card_Container .Each_card, .More_News .Each_card{
+    width: 300px;
+    height: 468px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+.NewsCard_Image{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.NewsCard_Image img{
+    width: 100%;
+    
+}
+
+.NewsCard_TextContent{
+    padding: 30px 25px;
+}
+
+.NewsCard_TextContent .Date{
+    font-weight: 600;
+}
+
+.NewsCard_TextContent > h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.NewsCard_TextContent .details{
+    margin-top: 20px;
+    color: grey;
+}
+
+.Date, .details{
+    font-size: .85rem;
+}
+
+.News_Card_Container .Each_card:hover, .More_News .Each_card:hover{
+    transform: translateY(-50px);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*-------IPAD PRO AND 11------*/
+@media (max-width: 1030px){
+    .News_Card_Container .Each_card, .More_News .Each_card{
+            margin-right: 40px;
+    }
+}
+
+/*----------IPAD MINI-----*/
+@media (max-width: 770px){
+    .News_Card_Container .Each_card, .More_News .Each_card{
+            margin-right: 20px;
+    }
+}
+
+/*-------IPHONE 16PRO MAX - 11 PRO MAX*/
+@media (max-width: 450px){
+    .News_Card_Container .Each_card, .More_News .Each_card{
+            margin-right: 0;
+    }
+}

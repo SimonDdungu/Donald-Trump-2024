@@ -4,7 +4,7 @@ import Main_about from './components/Main_about';
 import Main_achievementcards from './components/Main_achievementcards';
 import Main_Upcoming from "./components/Main_Upcoming";
 import Footer from "./components/Footer";
-
+import News from "./components/News";
 
 const App = () => {
 return <>
@@ -13,6 +13,7 @@ return <>
         <Main_achievementcards />
         <Main_about />
         <Main_Upcoming />
+        <News />
         <Footer />
       </>
 }
