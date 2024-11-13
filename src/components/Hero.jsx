@@ -2,7 +2,8 @@ import './HeroSection.css'
 
 const Hero = () => {
 
-    return <section className="Hero_section">
+
+    return  <section className="Hero_section">
                 <div className="Hero_page">
                     <div className="overlay"></div>
                     <div className="Hero_Content">
@@ -17,5 +18,6 @@ const Hero = () => {
                     </div>
                 </div>
             </section>
+
 }
 export default Hero;

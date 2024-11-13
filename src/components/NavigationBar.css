@@ -1,6 +1,6 @@
 .Navigation_Bar{
     background-color: #000d62;
-    z-index: 999;
+    z-index: 100;
 }
 .Nav_Bar{
     display: flex;

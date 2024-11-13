@@ -1,0 +1,31 @@
+.preloader{
+    background-color:  #000d62;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    top: 0;
+    z-index: 999;
+}
+.preloader img{
+    width: 150px;
+    margin-bottom: 70px;
+    animation: Flag_animate .8s infinite alternate;
+}
+
+.preloader p{
+    font-size: 1.5rem;
+}
+
+@keyframes Flag_animate {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(50px);
+    }
+}
