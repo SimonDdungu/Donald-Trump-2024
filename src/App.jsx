@@ -6,8 +6,7 @@ import Main_achievementcards from './components/Main_achievementcards';
 import Main_Upcoming from "./components/Main_Upcoming";
 import Footer from "./components/Footer";
 import News from "./components/News";
-import Preloader from "./components/preloader";
-import { q } from 'framer-motion/client';
+import Preloader from "./components/Preloader";
 
 const App = () => {
 
