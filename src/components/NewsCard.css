@@ -65,5 +65,6 @@
 @media (max-width: 450px){
     .News_Card_Container .Each_card, .More_News .Each_card{
             margin-right: 0;
+            height: 500px;
     }
 }
