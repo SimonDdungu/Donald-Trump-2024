@@ -1,17 +1,28 @@
+:root {
+  --primary-color: #000d62;
+  --secondary-color: #db0a0a;
+  --tertiary-color: #bfccff;
+}
+
+
 html, body{
   font-family: Helvetica;
   overflow-x: hidden;
   overscroll-behavior: none;
 }
-
+body{
+  cursor: url("./images/cursor/Cursor.png"), auto;
+}
 
 a{
   text-decoration: none;
   color: white;
+  cursor: url("./images/cursor/Pointer.png"), pointer;
 }
 a:hover{
   text-decoration: none;
   color: white;
+  cursor: url("./images/cursor/Pointer.png"), pointer;
 }
 .blue_text{
   color: #000d62;

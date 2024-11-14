@@ -1,0 +1,79 @@
+.Objective_section{
+    background-color: var(--primary-color);
+    padding: 0 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.Objectives_container{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.Objective_Image{
+    margin-right: 25px;
+    width: 100%;
+    overflow: hidden;
+    cursor: url("../images/cursor/Pointer.png"), pointer;
+}
+.Objective_Image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.Objective_Content{
+    padding: 50px 0 100px 0;
+}
+
+.Objective_Content > h1{
+    margin-bottom: 40px;
+    text-align: center;
+    cursor: url("../images/cursor/Pointer.png"), pointer;
+}
+
+.Objective_Content > ul{
+    padding: 0;
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.Each_Objective{
+    position: relative;
+    padding-left: 30px; 
+    margin-bottom: 15px;
+}
+
+.Each_Objective::before{
+    position: absolute;
+    content: "";
+    background-image: url("../images/icons/check.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    top: 3.5px;
+    left: 0;
+}
+
+@media (max-width: 1050px){
+    .Objectives_container{
+        flex-direction: column-reverse;
+        margin-right: 0;
+    }
+    .Objective_Content{
+        padding: 50px 0 10px 0;
+    }
+    .Objective_Image{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 450px){
+    .Objective_Content{
+        padding: 50px 20px 10px 20px;
+    }
+    .Objective_section{
+        padding: 0;
+    }
+}

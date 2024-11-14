@@ -12,7 +12,7 @@
     width: 180px;
     margin: 0;
     padding: 0;
-    cursor: pointer;
+    cursor: url("../images/cursor/Pointer.png"), pointer;
 }
 .Logo img{
     width: 100%;
@@ -30,7 +30,7 @@
 .Nav_links{
     padding: 19.5px 15px;
     font-size: 18px;
-    cursor: pointer;
+    cursor: url("../images/cursor/Pointer.png"), pointer;
 }
 
 .Nav_links:hover{

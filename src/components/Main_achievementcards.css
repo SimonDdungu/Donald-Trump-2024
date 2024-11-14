@@ -20,7 +20,7 @@
     align-items: center;
     width: 400px;
     height: 300px;
-    cursor: pointer;
+    cursor: url("../images/cursor/Pointer.png"), pointer;
     transition: all 0.4s ease;
 }
 

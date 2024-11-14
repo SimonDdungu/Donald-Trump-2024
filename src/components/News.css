@@ -1,6 +1,6 @@
 .News_section{
-    margin-bottom: 100px;
     padding: 50px 25px;
+    padding-bottom: 100px;
     background-color: aliceblue;
 }
 .News_Card_Container{
@@ -43,7 +43,7 @@
     color: white;
     border-radius: 50px;
     box-shadow:  0 5px 8px rgba(0, 0, 0, 0.1);;
-    cursor: pointer;
+    cursor: url("../images/cursor/Pointer.png"), pointer;
     padding: 5px 10px;
 }
 

@@ -21,7 +21,7 @@ const [Read, setRead] = useState(false);
                 <img src={Donald_fam} alt="Donald Trump with Wife and Daughter" />
             </div>
             <div className="Main_about_TextContent">
-                    <h1 style={{cursor: "pointer"}}><span className="blue_text anton-sc-regular">WHO IS </span><span className="red_text anton-sc-regular">DONALD TRUMP</span><span className="blue_text anton-sc-regular"> ?</span></h1>
+                    <h1 style={{cursor: "url('../images/cursor/Pointer.png'), pointer"}}><span className="blue_text anton-sc-regular">WHO IS </span><span className="red_text anton-sc-regular">DONALD TRUMP</span><span className="blue_text anton-sc-regular"> ?</span></h1>
                     <p>Donald J. Trump, now serving as the <i>47th President of the United States</i>, 
                         is a leader known for his dedication to American values, economic growth, and national strength. 
                         <br /><span className={`Main_about_hidetext ${Read && "active"}`}>As a businessman and former 45th President, Trump has consistently championed policies that prioritize American interests, security, and prosperity. His return to the White House signifies a renewed commitment to protecting freedoms, enhancing economic opportunity, and preserving the values that define our nation. 

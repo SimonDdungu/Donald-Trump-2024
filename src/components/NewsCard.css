@@ -4,7 +4,7 @@
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+    cursor: url("../images/cursor/Pointer.png"), pointer;
     background-color: white;
     transition: all 0.3s ease;
 }
