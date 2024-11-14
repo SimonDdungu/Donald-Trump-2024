@@ -15,7 +15,7 @@
 .More_News{
     /*margin-top: 70px;*/
     padding: 0;
-    max-height: 1000px;
+    max-height: 3000px;
     transform: translateY(0);
     display: flex;
     justify-content: space-around;
@@ -36,7 +36,7 @@
     height: auto;
     margin: auto;
     margin-top: 70px;
-    max-height: 1000px;
+    max-height: 3000px;
     transform: translateY(0);
     opacity: 1;
     transition: all 0.5s ease-out;
