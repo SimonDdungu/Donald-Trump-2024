@@ -24,6 +24,9 @@ a:hover{
   color: white;
   cursor: url("./images/cursor/Pointer.png"), pointer;
 }
+button{
+  cursor: url("./images/cursor/Pointer.png"), pointer;
+}
 .blue_text{
   color: #000d62;
 }

@@ -1,0 +1,110 @@
+.Newsletter{
+    padding: 100px 0;
+    background-color: #000022;
+}
+
+.Newsletter_container{
+    text-align: center;
+    /*background-color: var(--primary-color);*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cover/blue_mail_wallpaper.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.51);
+    color: white;
+    border-radius: 10px;
+    padding: 100px;
+}
+
+.Newsletter_container > img{
+    width: 100px;
+    margin-bottom: 30px;
+}
+.Newsletter_container > h1{
+    margin-bottom: 30px;
+}
+.Newsletter_container > p{
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 30px;
+    color: rgba(245, 245, 245, 0.659);
+}
+
+.Newsletter_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.Newsletter_form input{
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #000022;
+    border: 1px solid whitesmoke;
+    margin-right: 10px;
+    width: 300px;
+    box-sizing: border-box; 
+    cursor: url("../images/cursor/Pointer.png"), pointer;
+}
+
+.Newsletter_form input:focus{
+    outline: none;
+}
+
+.Newsletter_form button{
+    border: none;
+    border-radius: 10px 15px;
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--secondary-color);
+}
+.Newsletter_form button:focus{
+    outline: none;
+}
+.Newsletter_form button:hover{
+    cursor: url("../images/cursor/Pointer.png"), pointer;
+}
+
+@media (max-width: 850px){
+    .Newsletter_container > p{
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px){
+    .Newsletter_container{
+        padding: 50px 10px;
+        border-radius: 0;
+    }
+    .Newsletter_container > img{
+        width: 70px;
+    }
+    .Newsletter_container > p > span{
+        display: none;
+    }
+    .Newsletter_container > h1{
+        margin-bottom: 15px;
+    }
+    .Newsletter_form input{
+        width: 200px;
+    }
+    .Newsletter_form{
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:400px){
+    .Newsletter_container > p{
+        text-align: left;
+    }
+    .Newsletter_form{
+        justify-content: start;
+    }
+    .Newsletter_form input{
+        width: 340px;
+    }
+}

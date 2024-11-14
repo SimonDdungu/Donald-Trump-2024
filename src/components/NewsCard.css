@@ -40,9 +40,11 @@
     font-size: .85rem;
 }
 
-.News_Card_Container .Each_card:hover, .More_News .Each_card:hover{
-    transform: translateY(-50px);
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+@media (hover :hover){
+    .News_Card_Container .Each_card:hover, .More_News .Each_card:hover{
+        transform: translateY(-50px);
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    }
 }
 
 /*-------IPAD PRO AND 11------*/

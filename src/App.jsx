@@ -8,26 +8,31 @@ import Main_Upcoming from "./components/Main_Upcoming";
 import Footer from "./components/Footer";
 import News from "./components/News";
 import Objectives from './components/Objectives';
+import Newletter from './components/Newletter';
 
 const App = () => {
 
-  const [PageLoading, setPageLoading] = useState(true);
+  const [PageLoading, setPageLoading] = useState(false);
 
+ /*  =========================LOADING PAGE=============================
   useEffect(() => {
 
-    const ShowLoadedWebsite = () => {
-        setTimeout(() => {setPageLoading(false);}, 3000);
-    };
+            if (sessionStorage.getItem('pageLoaded')) {
+                setPageLoading(false);
+            } else {
+                    const ShowLoadedWebsite = () => {
+                      setTimeout(() => {setPageLoading(false); sessionStorage.setItem('pageLoaded', 'true');}, 3000);
+                  };
 
-    
-    window.addEventListener('DOMContentLoaded', ShowLoadedWebsite);
-    window.addEventListener('load', ShowLoadedWebsite);
+            };
+                        
+              window.addEventListener('load', ShowLoadedWebsite);
 
-   return () => {window.removeEventListener('DOMContentLoaded', ShowLoadedWebsite);
-   window.removeEventListener('load', ShowLoadedWebsite);}
+              return () => {window.removeEventListener('load', ShowLoadedWebsite);}
 
   }, []);
 
+  */
 
 return <>
       {PageLoading ? ( 
@@ -43,6 +48,7 @@ return <>
                   <Main_Upcoming />
                   <News />
                   <Objectives />
+                  <Newletter />
                   <Footer />
               </>
           )}
